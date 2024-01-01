@@ -1,0 +1,13 @@
+.schedule{
+    display: flex;
+
+    .schedule-Container{
+        flex: 6;
+        //border: 2px solid blue;
+        
+        .calendar{
+           // border: 2px solid red;
+            margin: 10px;
+        }
+    }
+}

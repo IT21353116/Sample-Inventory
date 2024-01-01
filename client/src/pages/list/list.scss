@@ -1,0 +1,15 @@
+.list{
+    display: flex;
+
+    .list-Container{
+        flex: 6;
+       // border: 2px solid red;
+
+        .card-Container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;        
+            padding: 50px;
+        }
+    }
+}

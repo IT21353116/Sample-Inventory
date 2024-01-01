@@ -1,0 +1,89 @@
+.sidebar{
+    flex: 1;
+    border-right: 2px solid rgb(225, 221, 221);
+    min-height: 100vh;
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+
+        .logo{
+           font-weight: bold;
+           color: rgb(14, 14, 110);
+           font-size: 20px;
+           
+        }
+    }
+
+    hr{
+        border: 0.5px solid rgb(225, 221, 221);
+        height: 0;
+    }
+
+    .center{
+
+        .title{
+            font-weight: bold;
+            font-size: 10px;
+            color: lightgrey;
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+
+        ul{
+            padding: 5px;
+            list-style-type: none;
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: rgb(14, 14, 110);
+
+                &:hover{
+                    background-color: lightgrey;
+                }
+
+                .icon{
+                    margin-right: 5px;
+                    color: rgb(14, 14, 110);
+                    
+                }
+            }
+        }
+
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOptions{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid rgb(14, 14, 110);
+
+        &:nth-child(1){
+            background-color: whitesmoke;
+        }
+
+        &:nth-child(2){
+            background-color: #333;
+        }
+        
+        }
+    }
+
+
+}
