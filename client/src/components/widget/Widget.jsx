@@ -1,11 +1,10 @@
 import "./widget.scss"
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 import MovingOutlinedIcon from '@mui/icons-material/MovingOutlined';
-import { yellow } from "@mui/material/colors";
+
 
 const Widget = ({ type }) => {
 
