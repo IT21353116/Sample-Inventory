@@ -25,10 +25,18 @@ export const register = async (req, res, next) => {
 
 export const login = async (req, res, next) => {
     try{
+
+        if(!req.body.username)
+        return next(createError(404, "Username required!"));
+
+        if(!req.body.password)
+        return next(createError(404, "Password required!"));
+
+
         const user = await User.findOne({username: req.body.username});
 
         if(!user) 
-            return next(createError(404, "User not found"));
+            return next(createError(404, "Invalid Username or Password!"));
 
         const isPasswordCorrect = await bcrypt.compare(
             req.body.password, 
@@ -36,7 +44,7 @@ export const login = async (req, res, next) => {
         );
 
         if(!isPasswordCorrect) 
-            return next(createError(400, "Wrong password or username"));
+            return next(createError(400, "Invalid Username or Password!"));
 
         const token = jwt.sign({id:user._id, isAdmin: user.isAdmin }, process.env.JWT);
 

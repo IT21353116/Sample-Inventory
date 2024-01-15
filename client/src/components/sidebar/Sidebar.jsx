@@ -16,7 +16,7 @@ const Sidebar = () => {
   const { dispatch } = useContext(AuthContext);
 
   const handleLogout = async () => {
-    const res = await axios.post("/api/auth/logout");
+    await axios.post("/api/auth/logout");
     dispatch( { type: "LOGOUT" });
 
   }

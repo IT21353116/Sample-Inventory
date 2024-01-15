@@ -1,6 +1,6 @@
 import express from "express";
-import { getUser, updateUser } from "../controllers/user.js";
-import { verifyAdminUser, verifyToken } from "../utils/verifyToken.js";
+import { changePassword, getUser, updateUser } from "../controllers/user.js";
+import { verifyAdminUser } from "../utils/verifyToken.js";
 
 const router = express.Router(); 
 
@@ -17,5 +17,8 @@ router.get("/:id", verifyAdminUser, getUser);
 
 //UPDATE
 router.put("/:id", verifyAdminUser, updateUser);
+
+//CHNAGE PASSWORD
+router.put("/changePassword/:id", verifyAdminUser, changePassword);
 
 export default router;

@@ -51,7 +51,8 @@
             color: white;
             display: flex;
             width: 80px;
-            transition: 0.5s;;
+            transition: 0.5s;
+            cursor: pointer;
 
             &:hover{
                 background-color: rgb(14, 14, 110, 0.6);

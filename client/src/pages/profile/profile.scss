@@ -5,7 +5,241 @@
        
         flex: 6; 
 
+        .P-sub-container{
+            height: calc(100% - 80px );
+            //border: 2px solid red;
 
+            .card{
+               
+                display: flex;
+                height: 90%;
+                border-radius: 0%;
+                margin: 22px;
+                box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+                -webkit-box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+                -moz-box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+
+
+                .image-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items:center;
+                    padding: 12px; 
+                    flex: 4;
+                    border-right: 2px solid rgb(225, 221, 221);; 
+                    margin-top: 18px;
+                    margin-bottom: 18px;
+                   // border: 2px solid red;
+                    gap: 12px;
+                   
+                    .avatar{
+                        cursor: pointer;
+                        border-radius: 50%;
+                        width: 150px;
+                        height: 150px;
+                        border: 5px solid rgb(255, 255, 255);
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        margin-top: 50px;
+                        //border: 2px solid green;
+                    }
+
+                    .addicon{
+                      
+
+                       label{
+                            color: rgb(170, 168, 168);
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                        }
+                    }
+
+                    .form-field-icon-container{
+
+                        .iconbtn{
+                            //border: 2px solid green;
+                            border-radius: 50%;
+                            padding: 12px;
+                            cursor: pointer;
+                            color: rgb(170, 168, 168);
+                            transition: 500ms;
+
+                            &:hover{
+                                background-color: rgb(214, 211, 211);
+                            }
+                        }
+
+                    }
+
+                    .reset-password-fields{
+                      
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 12px;
+                        padding: 12px;
+                        border-radius: 12px;
+                        box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+                        -webkit-box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+                        -moz-box-shadow: 4px 3px 13px 3px rgba(203,195,195,0.87);
+                       
+                        
+
+                        input{
+                            border: none;
+                            font-size: 15px;
+                            padding: 12px;
+                            color: rgb(187, 180, 180);
+                            background-color: rgb(236, 232, 232);
+
+                            &::placeholder{
+                                color: rgb(187, 180, 180);
+                            }
+
+                            &:focus{
+                                outline: none;
+                                color: rgb(187, 180, 180);
+                                background-color: rgb(236, 232, 232);
+                            }
+
+                        }
+
+                        .btns2{
+                           // border: 2px solid red;
+                            gap: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .errmsgholder2{
+                                //border: 2px solid red;
+                                height: 20px;
+                            }
+    
+                            .reset-password-submit{
+                                padding: 12px;
+                                width: 175px;
+                                background-color: white;
+                                border: 2px solid rgb(14, 14, 110, 0.6);
+                                transition: 400ms;
+                                cursor: pointer;
+                                color: rgb(187, 180, 180);
+                                font-size: 15px;
+                                margin-top: 20px;
+        
+                                &:hover{
+                                    background-color: rgb(14, 14, 110);
+                                    color: white;
+                                   
+                                }
+                            }
+                        }
+                    }
+                 
+                }
+
+                .info{
+                    flex: 6;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+
+                    .btns{
+                        margin-top: 55px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        align-items: center;
+                        //border: 2px solid red;
+
+                        .errmsgholder{
+                            height: 20px;
+                        }
+        
+                        .btn{
+                            padding: 12px;
+                            width: 175px;
+                            background-color: white;
+                            border: 2px solid rgb(14, 14, 110, 0.6);
+                            transition: 400ms;
+                            cursor: pointer;
+                            color: rgb(187, 180, 180);
+                            font-size: 15px;
+                            // margin-top: 20px;
+                            // margin-right: 20px;
+    
+                            &:hover{
+                                background-color: rgb(14, 14, 110);
+                                color: white;
+                               
+                            }
+                        }
+                    }
+                   
+
+                    .item{
+                       // border: 2px solid green;
+                        margin-top: 55px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 3px;
+                        width: 60%;
+
+                        label{
+                            color: rgb(187, 180, 180);
+                            font-size: 15px;
+                            //border: 2px solid red;
+                        }
+
+                        .inputContainer{
+                            display: flex;
+                            align-items: center;
+                            //border: 2px solid orange;
+                            background-color: rgb(236, 232, 232);
+
+                            .icon{
+                                padding: 12px;
+                                //border: 2px solid green;
+                                background-color: rgb(214, 211, 211);
+                                color: rgb(170, 168, 168);
+                            }
+
+                            input{
+                                border: none;
+                                font-size: 15px;
+                                color: rgb(187, 180, 180);
+                                //border: 2px solid green;
+                                padding: 5px;
+                                background-color: inherit;
+                                width: 100%;
+                                
+                             
+                                &:focus{
+                                    outline: none;
+                                    color: rgb(187, 180, 180);
+                                    background-color: inherit;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+
+        
+          
+          
+    
+             
+
+                     
+            
+        }
        
     }
 }
