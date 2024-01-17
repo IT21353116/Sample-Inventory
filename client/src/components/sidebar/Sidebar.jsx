@@ -66,10 +66,6 @@ const Sidebar = () => {
                 <span>Logout</span></li>
             </ul>
         </div>
-        <div className="bottom">
-           <div className="colorOptions"></div>
-           <div className="colorOptions"></div>
-        </div>
     </div>
   )
 }
